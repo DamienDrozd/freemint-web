@@ -23,7 +23,8 @@ module.exports = {
   },
   networks: {
     rinkeby: {
-      url: "",
+      url: "https://rinkeby.infura.io/v3/5499c83d861743938e0c702e13636485",
+      accounts:["0x25be04348fc60a1359ff3fd2be9c24e452ba0448c41eca628d3a341391dc7310"]
     }
   }
 };
