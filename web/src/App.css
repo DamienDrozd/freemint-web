@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@100;300;400;700&display=swap');
+
+.App {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  font-size: 16px;
+  background: rgb(0, 0, 0);
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.text{
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.banniere {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.image img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+
+
+h1 {
+  /* font-family: 'Pacifico', cursive; */
+  color: rgb(106, 92, 51);
+}
+
+.count {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.cost {
+  font-weight: 300;
+}
+
+button {
+  background: rgb(106, 92, 51);
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+}
