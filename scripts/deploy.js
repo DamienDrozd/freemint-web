@@ -15,7 +15,7 @@ async function main() {
 
   // We get the contract to deploy
   const NFT = await hre.ethers.getContractFactory("NFT");
-  const nft = await NFT.deploy("Nomad Gallery", "ND", "ipfs://bafybeickoksiiqico5g463dwo6vcbaxhibd2dq5u7765otbeagiobcpd7u/car-gold-1.json");
+  const nft = await NFT.deploy("Nomad Gallery", "ND", "ipfs://bafybeickoksiiqico5g463dwo6vcbaxhibd2dq5u7765otbeagiobcpd7u/car-gold-1.json/");
 
   await nft.deployed();
 

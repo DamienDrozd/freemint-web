@@ -1,38 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@100;300;400;700&display=swap');
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+html {
+  font-size: 16px;
+  background: rgb(0, 0, 0);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.text{
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.banniere {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.image img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+
+
+h1 {
+  /* font-family: 'Pacifico', cursive; */
+  color: rgb(106, 92, 51);
+}
+
+.count {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.cost {
+  font-weight: 300;
+}
+
+button {
+  background: rgb(106, 92, 51);
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
 }

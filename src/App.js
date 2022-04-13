@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
 import NFT from './artifacts/contracts/NFT.sol/NFT.json';
-import logo from './logo.svg';
+import gif from './img/nomad-fire.gif';
 import './App.css';
 
-const NFTaddress = "";
+const NFTaddress = "0x2ba4D89bE0D047350c66331f42A61010514711e9";
 
 function App() {
 
@@ -21,8 +21,8 @@ function App() {
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const contract = new ethers.Contract(NFTaddress, NFT.abi, provider );
       try {
-        const cost = await contract.getCost();
-        const totalSupply = await contract.getTotalSupply();
+        const cost = await contract.cost();
+        const totalSupply = await contract.totalSupply();
         const object = {"cost" : String(cost), "totalSupply" : String(totalSupply)}
         setData(object);
       }
@@ -56,10 +56,15 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        {error && <p>{error}</p>}
-        <h1>Mint a NomadGallery NFT</h1>
-        <p className = "count">{data.totalSupply} / 200</p>
-        <p className = "cost">Each NFT cost {data.cost / 10**18} eth (exluding gas fees)</p>
+        <div className="image">
+          <img src={gif} alt="gif"/>
+        </div>
+        <div className="text">
+          {error && <p>{error}</p>}
+          <h1>Mint a NomadGallery NFT</h1>
+          <p className = "count">{data.totalSupply} / 200</p>
+          <p className = "cost">Each NFT cost {data.cost / 10**18} eth (exluding gas fees)</p>
+        </div>
         <button onClick={mint}>MINT a FREE Nomad Gallery NFT</button>
       </div>
     </div>

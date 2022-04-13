@@ -44,7 +44,7 @@ contract NFT is ERC721, Ownable {
     string memory _initBaseURI
   ) ERC721(_name, _symbol) {
     setHiddenMetadataUri(_initBaseURI);
-    mint(1);
+    _mintLoop(msg.sender, 1);
   }
 
   modifier mintCompliance(uint256 _mintAmount) {
@@ -147,13 +147,6 @@ contract NFT is ERC721, Ownable {
     paused = _state;
   }
 
-  function withdraw() public onlyOwner {
-    // This will transfer the remaining contract balance to the owner.
-    // Do not remove this otherwise you will not be able to withdraw the funds.
-    // =============================================================================
-    (bool os, ) = payable(owner()).call{value: address(this).balance}("");
-    // =============================================================================
-  }
 
   function _mintLoop(address _receiver, uint256 _mintAmount) internal {
     for (uint256 i = 0; i < _mintAmount; i++) {
