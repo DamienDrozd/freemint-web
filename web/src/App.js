@@ -4,7 +4,7 @@ import NFT from './artifacts/contracts/NFT.sol/NFT.json';
 import gif from './img/nomad-fire.gif';
 import './App.css';
 
-const NFTaddress = "0x3af008972D0E53D9f5AB896e534Abdfe287493da";
+const NFTaddress = "0x59F497Bd97Eae1E152CFC2E30485affD86f9eb06";
 
 function App() {
 
@@ -75,3 +75,10 @@ function App() {
 }
 
 export default App;
+
+
+//reste a faire: 
+//- mise a jour du site lors du deployement 
+//-redirection vers le etherscan / opensea lors du mint
+//lien du opensea sur la page 
+// upload du site.
