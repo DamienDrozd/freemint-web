@@ -66,7 +66,7 @@ function App() {
           <h1>Mint a NomadGallery NFT</h1>
           <p className = "count">{data.totalSupply} / {data.maxSupply}</p>
           <p className = "cost">Each NFT cost {data.cost / 10**18} eth (exluding gas fees)</p>
-          <p>tokenURI : {data.tokenURI}</p>
+          {/* <p>tokenURI : {data.tokenURI}</p> */}
         </div>
         <button onClick={mint}>MINT a FREE Nomad Gallery NFT</button>
       </div>

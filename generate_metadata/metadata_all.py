@@ -23,7 +23,7 @@ IMAGE_TYPE = 'image/gif'
 PROJECT_NAME = "Nomad Is Burning "
 ROYALTIES_AMOUNT = 10
 
-DESCRIPTION = ""
+DESCRIPTION = "Part of the Nomad Digital 240 collection, The Burning Logo has been created in collaboration with Jean Ewen [see on website](https: // www.nomadgallerynft.com/collections/nomad-digital-240)"
 # DESCRIPTION = "test description"
 
 NFTSTORAGE_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweGUzZGU2RjRjZTdlYTdEZERiOWJFMGVCMTIzMjNDOENDODViNDQxNzUiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTY0Njg1OTM0ODg3MywibmFtZSI6InRlc3QifQ.oqGDpxt1uHvOcFKCUXaYhxuRUEG6VJDLjuFtt77C90I"

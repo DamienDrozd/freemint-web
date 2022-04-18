@@ -1,0 +1,42 @@
+[debug] [2022-04-14T15:56:22.265Z] ----------------------------------------------------------------------
+[debug] [2022-04-14T15:56:22.272Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\damie\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-04-14T15:56:22.273Z] CLI Version:   10.6.0
+[debug] [2022-04-14T15:56:22.274Z] Platform:      win32
+[debug] [2022-04-14T15:56:22.274Z] Node Version:  v16.14.0
+[debug] [2022-04-14T15:56:22.277Z] Time:          Thu Apr 14 2022 17:56:22 GMT+0200 (heure d’été d’Europe centrale)
+[debug] [2022-04-14T15:56:22.278Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-14T15:56:22.433Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-14T15:56:22.434Z] > authorizing via signed-in user (damien200191@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2022-04-14T15:56:22.491Z] [hub] writing locator at C:\Users\damie\AppData\Local\Temp\hub-nomad-gallery-burning.json
+[debug] [2022-04-14T15:56:22.513Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/nomad-gallery-burning/sites 
+[debug] [2022-04-14T15:56:23.677Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/nomad-gallery-burning/sites 200
+[debug] [2022-04-14T15:56:23.678Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/nomad-gallery-burning/sites {"sites":[{"name":"projects/782089804232/sites/nomad-gallery-burning","defaultUrl":"https://nomad-gallery-burning.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-04-14T15:56:23.678Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/nomad-gallery-burning/webApps/-/config [none]
+[debug] [2022-04-14T15:56:24.151Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/nomad-gallery-burning/webApps/-/config 200
+[debug] [2022-04-14T15:56:24.152Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/nomad-gallery-burning/webApps/-/config {"projectId":"nomad-gallery-burning","storageBucket":"nomad-gallery-burning.appspot.com","apiKey":"AIzaSyAmA8i2OQKlymSLYEzuy07XJGE9BvEPASI","authDomain":"nomad-gallery-burning.firebaseapp.com","messagingSenderId":"782089804232"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ localhost:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [14/Apr/2022:15:56:28 +0000] "GET / HTTP/1.1" 200 708 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [14/Apr/2022:15:56:28 +0000] \"GET / HTTP/1.1\" 200 708 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [14/Apr/2022:15:56:28 +0000] "GET /static/js/main.c44a96a3.js HTTP/1.1" 200 457867 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [14/Apr/2022:15:56:28 +0000] \"GET /static/js/main.c44a96a3.js HTTP/1.1\" 200 457867 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [14/Apr/2022:15:56:28 +0000] "GET /static/css/main.59136ec1.css HTTP/1.1" 200 1004 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [14/Apr/2022:15:56:28 +0000] \"GET /static/css/main.59136ec1.css HTTP/1.1\" 200 1004 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [14/Apr/2022:15:56:28 +0000] "GET /src/App.js HTTP/1.1" 200 708 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [14/Apr/2022:15:56:28 +0000] \"GET /src/App.js HTTP/1.1\" 200 708 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [14/Apr/2022:15:56:29 +0000] "GET /static/media/nomad-fire.7138abbeb1627240f9ba.gif HTTP/1.1" 200 34981681 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [14/Apr/2022:15:56:29 +0000] \"GET /static/media/nomad-fire.7138abbeb1627240f9ba.gif HTTP/1.1\" 200 34981681 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36\""}}
+[debug] [2022-04-14T18:24:40.817Z] Received signal SIGHUP 1
